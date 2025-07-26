@@ -1,0 +1,33 @@
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import Home from './components/Page1/Home';
+import Portfolio from './components/Page2/Portfolio'; 
+function App() {
+  return (
+    <Router>
+      <div>
+        <header>
+          <nav>
+            <ul>
+              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+        </main>
+
+        <footer>
+          <div className='footerPart'>Footer here</div>
+        </footer>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
