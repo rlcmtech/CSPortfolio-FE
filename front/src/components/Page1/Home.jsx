@@ -11,12 +11,12 @@ const Home = () => {
       <header>
         <h1>This is home</h1>
         <nav>
-<a href="#hero">Hero</a>
+
 <a href="#about">About</a>
 <a href="#educ">Education</a>
 <a href="#workexp">Work Experience</a>
         </nav>
-        
+
       </header>
 
         <section id="hero">

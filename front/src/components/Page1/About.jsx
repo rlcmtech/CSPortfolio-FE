@@ -5,7 +5,12 @@ const About = () => {
   return (
   
         <section id='about'>
-I used to be part of different industries, but now I am moving back towards to where I started - the IT industry
+My career journey has been shaped by rich experiences in customer service, education, training, sales, and product support. Today, I am committed to bringing these insights into the cybersecurity field — combining real-world exposure with growing technical skills to help address modern security challenges.
+
+
+
+
+
       </section>
    
   )
