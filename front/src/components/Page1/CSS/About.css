@@ -1,0 +1,10 @@
+#abt-list {
+    justify-content: center;
+}
+
+.a-intro {
+    width: 500px;
+    height: 300px;
+    margin: 100px;
+   border: black;
+}

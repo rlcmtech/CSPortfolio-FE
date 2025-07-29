@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.scss';
+import './CSS/Hero.css';
 
 const Hero = () => {
   return (
@@ -7,8 +7,8 @@ const Hero = () => {
 
 
 <div id='tagline'>
-<h3>Rooted in IT. Backed by transferable experience. Driven by cybersecurity.
-A reliable addition to your team.</h3>
+<h1>Rooted in IT. Backed by transferable experience. Driven by cybersecurity.</h1>
+<h2>A reliable addition to your team.</h2>
 </div>
 
 

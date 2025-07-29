@@ -1,0 +1,85 @@
+
+#projects {
+    align-items: center;
+    
+    
+}
+
+.proj-ul {
+  display: flex;
+  flex-wrap: wrap; /* allows items to move to the next line */
+  justify-content: center; /* centers the rows */
+  gap: 20px; /* spacing between cards */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.proj-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  border: solid black;
+}
+
+
+.proj-head {
+  display: flex;
+  flex-direction: column; /* stacks title and image */
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  width: 300px;
+  height: 200px;
+  border: solid black;
+}
+
+
+
+
+.proj-desc {
+     border-color: black;
+      width: 300px;
+  height: 200px;
+    border: solid;
+    justify-items: center;    
+}
+
+
+.proj-desc {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+summary {
+  cursor: pointer;
+  list-style: none; /* remove default arrow */
+}
+
+
+/* Hide the checkbox but keep it functional */
+.toggle-box {
+  display: none;
+}
+
+/* Smooth transition for the description */
+.proj-desc {
+  max-height: 200px;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+/* When checkbox is checked, hide the description */
+.toggle-box:checked ~ .proj-desc {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin-top: 0;
+}

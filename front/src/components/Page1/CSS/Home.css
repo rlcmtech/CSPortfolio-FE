@@ -5,3 +5,8 @@ html {
 a {
   margin: 10px;  
 }
+
+ul {
+ display: flex;
+}
+

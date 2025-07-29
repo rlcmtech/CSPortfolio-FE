@@ -1,0 +1,13 @@
+#hero {
+justify-items: center;
+margin: 10px;
+}
+
+#tagline, #heroImage  {
+    justify-items: center;
+}
+
+#tagline {
+   align-items: center;
+   
+}

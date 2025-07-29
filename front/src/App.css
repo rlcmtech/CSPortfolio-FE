@@ -1,0 +1,58 @@
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Layout container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  padding-top: 80px;    /* Adjust based on header height */
+  padding-bottom: 80px; /* Adjust based on footer height */
+}
+
+/* Sticky Header */
+#header-style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3b4d66;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+/* Sticky Footer */
+#footer-style {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3b4d66;
+  color: white;
+  padding: 1rem;
+}
+
+/* Nav styles */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}

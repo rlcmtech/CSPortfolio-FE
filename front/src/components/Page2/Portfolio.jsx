@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from './Projects';
 import Contact from './Contact';
+import './CSS2/Portfolio.css'
 
 
 const Portfolio = () => {
