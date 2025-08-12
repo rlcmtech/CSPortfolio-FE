@@ -5,7 +5,7 @@ const WorkExp = () => {
   return (
 
    <section id='workexp'>
-  <h4>This is work experience section</h4>
+  <h4>RELEVANCE TO CYBERSECURITY</h4>
 
   <ul id='work-ul'>
    <li className='work-li'>Customer Service: Often the first line of attack for phishing and vishing — I’ve seen how easily trust can be exploited.</li> 

@@ -5,20 +5,21 @@ import Portfolio from './components/Page2/Portfolio';
 import Contact from './components/Page2/Contact';
 
 
+
 function App() {
   return (
     <Router>
   <div className="app-container">
-    <header id='header-style'>
-      <nav>
-        <ul>
-          <li>Welcome to my page</li>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </ul>
-      </nav>
-    </header>
+   <header id='header-style'>
+  <nav className="nav-wrapper">
+    <div className="logo">Luis Magtira</div>
+    <ul>
+      <li className='menu-li'><NavLink to="/">Home</NavLink></li>
+      <li className='menu-li'><NavLink to="/Portfolio">Portfolio</NavLink></li>
+      <li className='menu-li'><NavLink to="/contact">Contact</NavLink></li>
+    </ul>
+  </nav>
+</header>
 
     <main className="content">
       <Routes>

@@ -25,7 +25,7 @@
   width: 400px;
   height: 300px;
   margin: 50px;
-  border: solid black;
+  
 }
 
 
@@ -37,6 +37,7 @@
   width: 300px;
   height: 200px;
   border: solid black;
+ border-radius: 8px;
 }
 
 
@@ -44,10 +45,11 @@
 
 .proj-desc {
      border-color: black;
-      width: 300px;
+     width: 300px;
   height: 200px;
     border: solid;
     justify-items: center;    
+     border-radius: 8px;
 }
 
 
@@ -55,31 +57,26 @@
   padding-left: 10px;
   margin-top: 10px;
 }
-summary {
-  cursor: pointer;
-  list-style: none; /* remove default arrow */
-}
 
-
-/* Hide the checkbox but keep it functional */
+/* Hide the checkbox visually but keep it functional */
 .toggle-box {
   display: none;
 }
 
-/* Smooth transition for the description */
+/* HIDE description by default */
 .proj-desc {
-  max-height: 200px;
-  opacity: 1;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  padding-left: 10px;
-  margin-top: 10px;
-}
-
-/* When checkbox is checked, hide the description */
-.toggle-box:checked ~ .proj-desc {
   max-height: 0;
   opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
   padding: 0;
   margin-top: 0;
+}
+
+/* SHOW description when checkbox is checked */
+.toggle-box:checked ~ .proj-desc {
+  max-height: 200px; /* or more, depending on your content */
+  opacity: 1;
+  padding-left: 10px;
+  margin-top: 10px;
 }

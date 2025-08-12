@@ -4,7 +4,6 @@ import './CSS2/Projects.css';
 const Projects = () => {
   return (
     <section id="projects">
-
       <ul className="proj-ul">
 
         <li className="proj-li">
@@ -14,45 +13,76 @@ const Projects = () => {
             <h4>Project Title</h4>
             <img src="sample.jpg" alt="project" />
           </label>
-
           <div className="proj-desc">
             <p>Description 1</p>
             <p>Description 2</p>
           </div>
         </li>
 
-        <li className="proj-li">
+
+<li className="proj-li">
           <input type="checkbox" id="toggle-2" className="toggle-box" />
 
           <label htmlFor="toggle-2" className="proj-head">
-            <h4>Another Project</h4>
+            <h4>Project Title</h4>
             <img src="sample.jpg" alt="project" />
           </label>
-
           <div className="proj-desc">
-            <p>Description A</p>
-            <p>Description B</p>
+            <p>Description 1</p>
+            <p>Description 2</p>
           </div>
         </li>
+
 
         <li className="proj-li">
           <input type="checkbox" id="toggle-3" className="toggle-box" />
 
           <label htmlFor="toggle-3" className="proj-head">
-            <h4>Another Project</h4>
+            <h4>Project Title</h4>
             <img src="sample.jpg" alt="project" />
           </label>
-
           <div className="proj-desc">
-            <p>Description A</p>
-            <p>Description B</p>
+            <p>Description 1</p>
+            <p>Description 2</p>
           </div>
         </li>
 
+
+        <li className="proj-li">
+          <input type="checkbox" id="toggle-4" className="toggle-box" />
+
+          <label htmlFor="toggle-4" className="proj-head">
+            <h4>Project Title</h4>
+            <img src="sample.jpg" alt="project" />
+          </label>
+          <div className="proj-desc">
+            <p>Description 1</p>
+            <p>Description 2</p>
+          </div>
+        </li>
+
+
+<li className="proj-li">
+          <input type="checkbox" id="toggle-5" className="toggle-box" />
+
+          <label htmlFor="toggle-5" className="proj-head">
+            <h4>Project Title</h4>
+            <img src="sample.jpg" alt="project" />
+          </label>
+          <div className="proj-desc">
+            <p>Description 1</p>
+            <p>Description 2</p>
+          </div>
+        </li>
+
+
+
+
+
+
+
+        {/* Duplicate this block for toggle-2, toggle-3, etc. */}
         
-
-        {/* Add more cards by duplicating the block above and changing toggle-3, toggle-4, etc. */}
-
       </ul>
     </section>
   );

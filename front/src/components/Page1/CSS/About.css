@@ -1,10 +1,20 @@
 #abt-list {
+     text-align: justify;
     justify-content: center;
+     border-style: solid;
+    border: black;
+    border-radius: 8px;
 }
 
 .a-intro {
-    width: 500px;
-    height: 300px;
-    margin: 100px;
-   border: black;
+  display: flex;
+  flex-direction: column;     /* ensures text stacks properly */
+  justify-content: center;    /* vertical centering */
+  text-align: justify;
+  width: 500px;
+  height: 150px;
+  margin: 100px auto;         /* optional: centers the box itself */
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
 }

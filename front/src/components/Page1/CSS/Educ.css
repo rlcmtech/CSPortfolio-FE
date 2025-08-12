@@ -1,9 +1,53 @@
 #educ-ul {
-  
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .educ-li {
-     height: 300px;
-    width: 500px;
-    margin: 50px;
+  display: flex;
+  flex-direction: column;      /* Stack title and skills vertically */
+  align-items: flex-start;     /* Align content to the left */
+  text-align: left;
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.center-educ {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SKILLS SECTION */
+.skills {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.skills.show {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* FORCE vertical list layout */
+.skills ul {
+  display: block !important;         /* Force block layout */
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills ul li {
+  display: list-item !important;     /* Prevent flex or inline style */
+  margin-bottom: 5px;
+  text-align: left;
 }

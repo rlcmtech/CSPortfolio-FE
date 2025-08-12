@@ -1,10 +1,12 @@
 #hero {
 justify-items: center;
-margin: 10px;
+margin: 50px;
+display: flex;
 }
 
 #tagline, #heroImage  {
     justify-items: center;
+    margin: 30px;
 }
 
 #tagline {

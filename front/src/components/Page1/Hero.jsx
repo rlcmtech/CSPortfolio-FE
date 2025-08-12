@@ -7,8 +7,8 @@ const Hero = () => {
 
 
 <div id='tagline'>
-<h1>Rooted in IT. Backed by transferable experience. Driven by cybersecurity.</h1>
-<h2>A reliable addition to your team.</h2>
+<h2>ROOTED IN INFORMATION TECHNOLOGY. TRANSFERABLE EXPERIENCE. DRIVEN BY CYBERSECURITY.</h2>
+<h2>A RELIABLE ADDITION TO YOUR TEAM.</h2>
 </div>
 
 

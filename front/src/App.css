@@ -1,3 +1,14 @@
+/* App.css or global.css */
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Geist+Mono:wght@100..900&display=swap');
+
+/* Apply Coda globally to the whole page */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Coda', sans-serif;
+}
+
 /* Reset */
 html, body {
   margin: 0;
@@ -23,6 +34,7 @@ html, body {
 
 /* Sticky Header */
 #header-style {
+  font-family: 'Coda', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +43,41 @@ html, body {
   color: white;
   padding: 1rem;
   z-index: 1000;
+
 }
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 10rem;
+
+}
+
+.menu-li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-li a:hover {
+ 
+ 
+  font-weight: bold;
+}
+
+
 
 /* Sticky Footer */
 #footer-style {
@@ -53,6 +99,11 @@ ul {
   margin: 0;
 }
 
+
+
 li {
   margin: 0;
 }
+
+
+
