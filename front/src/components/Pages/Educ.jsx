@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CSS/Educ.css';
+import './CSS/Educ.css'
 
 const Educ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -10,18 +10,15 @@ const Educ = () => {
 
   const educData = [
     {
-      title: 'BS Information Technology',
-      skills: ['Skill 1', 'Skill 2', 'Skill 3'],
+      title: 'Certificates',
+      skills: ['CompTIA Security +', 'Fullstack Web Developent', 'Skill 3'],
     },
     {
-      title: 'Certificate for Professional Teaching Program and MA Educational Management',
-      skills: ['Skill 1', 'Skill 2', 'Skill 3'],
+      title: 'Education',
+      skills: ['B.S. in Information Technology', 'M.A. in Educational Management', 'Skill 3'],
     },
-    {
-      title: 'Fullstack Web Development Course and CompTIA Security+',
-      skills: ['Skill 1', 'Skill 2', 'Skill 3'],
-    },
-  ];
+    
+  ];  
 
   return (
     <section id="educ">

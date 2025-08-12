@@ -1,0 +1,51 @@
+#work {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.work-li {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.work-title {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center; /* Center job titles */
+}
+
+.work-title:hover {
+  text-decoration: underline;
+}
+
+/* Slide-down container */
+.work-desc-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.work-desc-container.open {
+  max-height: 500px; /* enough for multiple list items */
+  padding: 10px;
+}
+
+/* Bullet list styling - force vertical */
+.work-desc-ul {
+  list-style-type: disc;       /* black round bullets */
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+  display: block;              /* ensure vertical stacking */
+}
+
+.work-desc-ul li {
+  display: list-item;          /* override any flex/grid */
+  margin-bottom: 5px;
+}

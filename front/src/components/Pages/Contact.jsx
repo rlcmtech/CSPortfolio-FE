@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CSS2/Contact.css';
+import './CSS/Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,6 +36,16 @@ const Contact = () => {
           required
         />
 
+         <label>Company:</label>
+        <input
+          type="text"
+          name="company"
+          placeholder="Company or Organization Name"
+          value={formData.company}
+          onChange={handleChange}
+          required
+        />
+
         <label>Subject:</label>
         <input
           type="text"
@@ -44,7 +54,7 @@ const Contact = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-        />
+        />  
 
         <label>Message:</label>
         <textarea
