@@ -52,7 +52,13 @@ const Work = () => {
   }, [])
 
   return (
+
+    
     <div id='work' ref={containerRef}>
+      <h4></h4>
+      <h4></h4>
+      <h4></h4>
+      <h4>WORK EXPERIENCE</h4>
       <ul className='work-ul'>
         {jobs.map((job, index) => (
           <li className='work-li' key={index}>

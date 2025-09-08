@@ -3,7 +3,9 @@ import './CSS/Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
+
     email: '',
+    company: '',
     subject: '',
     message: '',
   });
@@ -15,12 +17,32 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message!');
-    // Later, send data to a backend or use EmailJS
-  };
+    
+    try {
+        const response = await fetch('http://localhost:3001/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+        if(result.success){
+            alert('✅ Your message was sent successfully!');
+            setFormData({ email: '', company: '', subject: '', message: '' });
+        } else {
+            alert('❌ Failed to send message: ' + result.message);
+        }
+
+    } catch (err) {
+        console.error(err);
+        alert('❌ Error sending message');
+    }
+};
+
 
   return (
     <section id='contact'>

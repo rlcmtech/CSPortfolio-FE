@@ -12,7 +12,7 @@ const About = () => {
 <li className='a-intro'>
 <div>
 My background spans customer service, education, training, sales, and product support. I’m now focused on applying these experiences to cybersecurity, blending real-world insight with technical growth.
-<a href="#workexp">See more</a>
+<a href="#work">See more</a>
 </div> 
 </li>
 

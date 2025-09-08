@@ -1,53 +1,51 @@
-#educ-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+#educ {
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .educ-li {
-  display: flex;
-  flex-direction: column;      /* Stack title and skills vertically */
-  align-items: flex-start;     /* Align content to the left */
-  text-align: left;
-  width: 500px;
-  margin: 50px auto;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.center-educ {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* SKILLS SECTION */
-.skills {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: all 0.5s ease;
   width: 100%;
+  margin-bottom: 15px;
 }
 
-.skills.show {
+.educ-title {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.educ-title:hover {
+  text-decoration: underline;
+}
+
+/* Slide-down container */
+.educ-desc-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.educ-desc-container.open {
   max-height: 500px;
-  opacity: 1;
-  margin-top: 10px;
+  padding: 10px;
 }
 
-/* FORCE vertical list layout */
-.skills ul {
-  display: block !important;         /* Force block layout */
+/* Bullet list styling */
+.educ-desc-ul {
   list-style-type: disc;
+  list-style-position: outside;
   padding-left: 20px;
   margin: 0;
+  display: block;
 }
 
-.skills ul li {
-  display: list-item !important;     /* Prevent flex or inline style */
+.educ-desc-ul li {
+  display: list-item;
   margin-bottom: 5px;
-  text-align: left;
 }
