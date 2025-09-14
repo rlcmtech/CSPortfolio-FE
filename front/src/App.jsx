@@ -24,8 +24,7 @@ function App() {
         <section id="hero"><Hero /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
-        <section id="work"><Work /></section>
-        <section id="educ"><Educ /></section>
+        <section id="work"><Work /></section> 
         <section id="contact"><Contact /></section>
       </main>
 

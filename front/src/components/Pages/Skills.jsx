@@ -11,17 +11,12 @@ const About = () => {
 
 <li className='a-intro'>
 <div>
-My background spans customer service, education, training, sales, and product support. I’m now focused on applying these experiences to cybersecurity, blending real-world insight with technical growth.
+Both of my work and academic background have an overview and touched the very basic foundation in cyber security. 
 <a href="#work">See more</a>
 </div> 
 </li>
 
-<li className='a-intro'>
-<div>
-  Furthering my education deepened my perspective and taught me adaptability and resilience—skills I now apply across disciplines.
-  Learn more about my <a href="#educ">See more</a>
-</div>
-</li>
+
 
 </ul>
       </section>

@@ -48,32 +48,7 @@ const Projects = () => {
         </li>
 
 
-        <li className="proj-li">
-          <input type="checkbox" id="toggle-4" className="toggle-box" />
-
-          <label htmlFor="toggle-4" className="proj-head">
-            <h4>Project Title</h4>
-            <img src="sample.jpg" alt="project" />
-          </label>
-          <div className="proj-desc">
-            <p>Description 1</p>
-            <p>Description 2</p>
-          </div>
-        </li>
-
-
-<li className="proj-li">
-          <input type="checkbox" id="toggle-5" className="toggle-box" />
-
-          <label htmlFor="toggle-5" className="proj-head">
-            <h4>Project Title</h4>
-            <img src="sample.jpg" alt="project" />
-          </label>
-          <div className="proj-desc">
-            <p>Description 1</p>
-            <p>Description 2</p>
-          </div>
-        </li>
+      
 
 
 
